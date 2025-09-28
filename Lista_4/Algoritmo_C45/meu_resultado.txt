@@ -1,0 +1,39 @@
+True -> Testar: Sex Qtd: 535 Entropia: 0.7265663807331002
+├── Sex == female -> Testar: Pclass Qtd: 194 Entropia: 0.6209563972675822
+│   ├── Pclass <= 2.5 -> Testar: Fare Qtd: 111 Entropia: 0.2527987330592422
+│   │   ├── Fare <= 28.85625 -> 1 Qtd: 45
+│   │   └── Fare > 28.85625 -> 1 Qtd: 66
+│   └── Pclass > 2.5 -> Testar: Age Qtd: 83 Entropia: 0.8896862280462745
+│       ├── Age <= 5.5 -> 1 Qtd: 9
+│       └── Age > 5.5 -> 0 Qtd: 74
+└── Sex == male -> Testar: Age Qtd: 341 Entropia: 0.649990517953873
+    ├── Age <= 5.5 -> Testar: SibSp Qtd: 12 Entropia: 0.2704260414863776
+    │   ├── SibSp <= 2.0 -> 1 Qtd: 8
+    │   └── SibSp > 2.0 -> 0 Qtd: 4
+    └── Age > 5.5 -> Testar: Pclass Qtd: 329 Entropia: 0.5996635450703389
+        ├── Pclass <= 1.5 -> 0 Qtd: 71
+        └── Pclass > 1.5 -> 0 Qtd: 258
+
+Sex == female && Pclass > 2.5 && Age > 5.5 => Classe: 0
+Sex == female && Pclass > 2.5 && Age <= 5.5 => Classe: 1
+Sex == female && Pclass <= 2.5 && Fare > 28.85625 => Classe: 1
+Sex == female && Pclass <= 2.5 && Fare <= 28.85625 => Classe: 1
+Sex == male && Age <= 5.5 && SibSp <= 2.0 => Classe: 1
+Sex == male && Age <= 5.5 && SibSp > 2.0 => Classe: 0
+Sex == male && Age > 5.5 && Pclass > 1.5 => Classe: 0
+Sex == male && Age > 5.5 && Pclass <= 1.5 => Classe: 0
+Classe: 0
+  Precisão: 0.7684
+  Recall: 0.9733
+  F1-Score: 0.8588
+  Acurácia: 0.7978
+
+Classe: 1
+  Precisão: 0.9155
+  Recall: 0.4962
+  F1-Score: 0.6436
+  Acurácia: 0.7978
+
+     0   1
+0  219   6
+1   66  65

@@ -1,0 +1,27 @@
+True -> Testar: outlook Qtd: 9 Entropia: 0.2962962962962963
+├── outlook in ['Overcast'] -> Yes Qtd: 3
+└── outlook in ['Sunny', 'Rain'] -> Testar: humidity Qtd: 6 Entropia: 0.2222222222222222
+    ├── humidity in ['High'] -> No Qtd: 3
+    └── humidity in ['Normal'] -> Testar: wind Qtd: 3 Entropia: 0.0
+        ├── wind == ['Strong'] -> No Qtd: 1
+        └── wind == ['Weak'] -> Yes Qtd: 2
+
+outlook in ['Overcast'] => Classe: Yes
+outlook in ['Sunny', 'Rain'] && humidity in ['High'] => Classe: No
+outlook in ['Sunny', 'Rain'] && humidity in ['Normal'] && wind == ['Weak'] => Classe: Yes
+outlook in ['Sunny', 'Rain'] && humidity in ['Normal'] && wind == ['Strong'] => Classe: No
+Classe: No
+  Precisão: 0.5000
+  Recall: 1.0000
+  F1-Score: 0.6667
+  Acurácia: 0.8000
+
+Classe: Yes
+  Precisão: 1.0000
+  Recall: 0.7500
+  F1-Score: 0.8571
+  Acurácia: 0.8000
+
+     No  Yes
+No    1    0
+Yes   1    3

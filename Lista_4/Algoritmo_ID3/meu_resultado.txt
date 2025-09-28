@@ -1,0 +1,396 @@
+True -> Testar: Sex Qtd: 535
+├── Sex == female -> Testar: Pclass Qtd: 194
+│   ├── Pclass == 1 -> Testar: Fare Qtd: 62
+│   │   ├── Fare == Alta -> 1 Qtd: 57
+│   │   └── Fare == Média-Alta -> Testar: Embarked Qtd: 5
+│   │       ├── Embarked == C -> Testar: Age Qtd: 2
+│   │       │   └── Age == Adultos -> Testar: SibSp Qtd: 2
+│   │       │       └── SibSp == 0 -> Testar: Parch Qtd: 2
+│   │       │           └── Parch == 0 -> 1 Qtd: 2
+│   │       └── Embarked == S -> 1 Qtd: 3
+│   ├── Pclass == 2 -> Testar: Age Qtd: 49
+│   │   ├── Age == Adolescentes -> 1 Qtd: 3
+│   │   ├── Age == Adultos -> Testar: SibSp Qtd: 30
+│   │   │   ├── SibSp == 0 -> Testar: Fare Qtd: 17
+│   │   │   │   ├── Fare == Média-Alta -> 1 Qtd: 5
+│   │   │   │   └── Fare == Média-Baixa -> Testar: Parch Qtd: 12
+│   │   │   │       └── Parch == 0 -> Testar: Embarked Qtd: 12
+│   │   │   │           └── Embarked == S -> 1 Qtd: 12
+│   │   │   └── SibSp == 1 -> Testar: Fare Qtd: 13
+│   │   │       ├── Fare == Alta -> 1 Qtd: 2
+│   │   │       ├── Fare == Média-Alta -> Testar: Embarked Qtd: 10
+│   │   │       │   ├── Embarked == C -> 1 Qtd: 1
+│   │   │       │   └── Embarked == S -> Testar: Parch Qtd: 9
+│   │   │       │       ├── Parch == 0 -> 1 Qtd: 6
+│   │   │       │       └── Parch == 1 -> 1 Qtd: 3
+│   │   │       └── Fare == Média-Baixa -> 1 Qtd: 1
+│   │   ├── Age == Crianças -> 1 Qtd: 5
+│   │   ├── Age == Idosos -> 0 Qtd: 1
+│   │   └── Age == Jovens Adultos -> Testar: Parch Qtd: 10
+│   │       ├── Parch == 0 -> Testar: SibSp Qtd: 4
+│   │       │   ├── SibSp == 0 -> Testar: Embarked Qtd: 3
+│   │       │   │   ├── Embarked == C -> 1 Qtd: 1
+│   │       │   │   └── Embarked == S -> Testar: Fare Qtd: 2
+│   │       │   │       └── Fare == Média-Baixa -> 0 Qtd: 2
+│   │       │   └── SibSp == 1 -> 1 Qtd: 1
+│   │       ├── Parch == 1 -> 1 Qtd: 3
+│   │       └── Parch == 2 -> 1 Qtd: 3
+│   └── Pclass == 3 -> Testar: Fare Qtd: 83
+│       ├── Fare == Alta -> Testar: Parch Qtd: 8
+│       │   ├── Parch == 2 -> 0 Qtd: 5
+│       │   ├── Parch == 3 -> 0 Qtd: 1
+│       │   ├── Parch == 5 -> 1 Qtd: 1
+│       │   └── Parch == 6 -> 0 Qtd: 1
+│       ├── Fare == Baixo -> Testar: Embarked Qtd: 24
+│       │   ├── Embarked == C -> 1 Qtd: 2
+│       │   ├── Embarked == Q -> Testar: Parch Qtd: 16
+│       │   │   ├── Parch == 0 -> Testar: Age Qtd: 15
+│       │   │   │   ├── Age == Adolescentes -> 1 Qtd: 1
+│       │   │   │   ├── Age == Adultos -> Testar: SibSp Qtd: 11
+│       │   │   │   │   └── SibSp == 0 -> 1 Qtd: 11
+│       │   │   │   └── Age == Jovens Adultos -> Testar: SibSp Qtd: 3
+│       │   │   │       └── SibSp == 0 -> 1 Qtd: 3
+│       │   │   └── Parch == 2 -> 0 Qtd: 1
+│       │   └── Embarked == S -> Testar: Age Qtd: 6
+│       │       ├── Age == Adultos -> 0 Qtd: 3
+│       │       └── Age == Jovens Adultos -> 1 Qtd: 3
+│       ├── Fare == Média-Alta -> Testar: Parch Qtd: 31
+│       │   ├── Parch == 0 -> Testar: Embarked Qtd: 10
+│       │   │   ├── Embarked == C -> 0 Qtd: 2
+│       │   │   ├── Embarked == Q -> 1 Qtd: 1
+│       │   │   └── Embarked == S -> Testar: SibSp Qtd: 7
+│       │   │       ├── SibSp == 1 -> Testar: Age Qtd: 6
+│       │   │       │   ├── Age == Adultos -> 0 Qtd: 4
+│       │   │       │   └── Age == Jovens Adultos -> 0 Qtd: 2
+│       │   │       └── SibSp == 2 -> 0 Qtd: 1
+│       │   ├── Parch == 1 -> Testar: SibSp Qtd: 10
+│       │   │   ├── SibSp == 1 -> Testar: Embarked Qtd: 5
+│       │   │   │   ├── Embarked == C -> 0 Qtd: 1
+│       │   │   │   ├── Embarked == Q -> 0 Qtd: 1
+│       │   │   │   └── Embarked == S -> Testar: Age Qtd: 3
+│       │   │   │       ├── Age == Adultos -> 1 Qtd: 2
+│       │   │   │       └── Age == Crianças -> 1 Qtd: 1
+│       │   │   ├── SibSp == 2 -> 1 Qtd: 2
+│       │   │   └── SibSp == 3 -> 0 Qtd: 3
+│       │   ├── Parch == 2 -> Testar: Age Qtd: 7
+│       │   │   ├── Age == Adultos -> Testar: Embarked Qtd: 3
+│       │   │   │   ├── Embarked == C -> Testar: SibSp Qtd: 2
+│       │   │   │   │   └── SibSp == 0 -> 1 Qtd: 2
+│       │   │   │   └── Embarked == S -> 0 Qtd: 1
+│       │   │   ├── Age == Crianças -> Testar: SibSp Qtd: 3
+│       │   │   │   ├── SibSp == 0 -> 1 Qtd: 2
+│       │   │   │   └── SibSp == 3 -> 0 Qtd: 1
+│       │   │   └── Age == Jovens Adultos -> 1 Qtd: 1
+│       │   ├── Parch == 3 -> 1 Qtd: 1
+│       │   ├── Parch == 4 -> 0 Qtd: 2
+│       │   └── Parch == 5 -> 0 Qtd: 1
+│       └── Fare == Média-Baixa -> Testar: Age Qtd: 20
+│           ├── Age == Adolescentes -> 1 Qtd: 4
+│           ├── Age == Adultos -> Testar: SibSp Qtd: 6
+│           │   ├── SibSp == 0 -> Testar: Embarked Qtd: 5
+│           │   │   ├── Embarked == C -> 0 Qtd: 1
+│           │   │   └── Embarked == S -> Testar: Parch Qtd: 4
+│           │   │       ├── Parch == 0 -> 1 Qtd: 3
+│           │   │       └── Parch == 1 -> 1 Qtd: 1
+│           │   └── SibSp == 1 -> 0 Qtd: 1
+│           ├── Age == Crianças -> 1 Qtd: 4
+│           ├── Age == Idosos -> 1 Qtd: 1
+│           └── Age == Jovens Adultos -> Testar: SibSp Qtd: 5
+│               ├── SibSp == 0 -> Testar: Parch Qtd: 4
+│               │   └── Parch == 0 -> Testar: Embarked Qtd: 4
+│               │       └── Embarked == S -> 0 Qtd: 4
+│               └── SibSp == 1 -> 0 Qtd: 1
+└── Sex == male -> Testar: Fare Qtd: 341
+    ├── Fare == Alta -> Testar: SibSp Qtd: 64
+    │   ├── SibSp == 0 -> Testar: Age Qtd: 32
+    │   │   ├── Age == Adultos -> Testar: Pclass Qtd: 21
+    │   │   │   ├── Pclass == 1 -> Testar: Embarked Qtd: 17
+    │   │   │   │   ├── Embarked == C -> 0 Qtd: 5
+    │   │   │   │   └── Embarked == S -> Testar: Parch Qtd: 12
+    │   │   │   │       ├── Parch == 0 -> 0 Qtd: 10
+    │   │   │   │       └── Parch == 1 -> 0 Qtd: 2
+    │   │   │   └── Pclass == 3 -> Testar: Parch Qtd: 4
+    │   │   │       └── Parch == 0 -> Testar: Embarked Qtd: 4
+    │   │   │           └── Embarked == S -> 1 Qtd: 4
+    │   │   ├── Age == Crianças -> 1 Qtd: 2
+    │   │   ├── Age == Idosos -> 0 Qtd: 5
+    │   │   └── Age == Jovens Adultos -> Testar: Parch Qtd: 4
+    │   │       ├── Parch == 0 -> 0 Qtd: 2
+    │   │       └── Parch == 1 -> Testar: Pclass Qtd: 2
+    │   │           └── Pclass == 1 -> Testar: Embarked Qtd: 2
+    │   │               └── Embarked == C -> 1 Qtd: 2
+    │   ├── SibSp == 1 -> Testar: Age Qtd: 21
+    │   │   ├── Age == Adolescentes -> 0 Qtd: 1
+    │   │   ├── Age == Adultos -> Testar: Parch Qtd: 12
+    │   │   │   ├── Parch == 0 -> Testar: Embarked Qtd: 9
+    │   │   │   │   ├── Embarked == C -> Testar: Pclass Qtd: 3
+    │   │   │   │   │   └── Pclass == 1 -> 1 Qtd: 3
+    │   │   │   │   └── Embarked == S -> Testar: Pclass Qtd: 6
+    │   │   │   │       └── Pclass == 1 -> 0 Qtd: 6
+    │   │   │   ├── Parch == 1 -> Testar: Pclass Qtd: 2
+    │   │   │   │   ├── Pclass == 1 -> 1 Qtd: 1
+    │   │   │   │   └── Pclass == 2 -> 0 Qtd: 1
+    │   │   │   └── Parch == 2 -> 1 Qtd: 1
+    │   │   ├── Age == Crianças -> 1 Qtd: 3
+    │   │   ├── Age == Idosos -> Testar: Embarked Qtd: 2
+    │   │   │   ├── Embarked == C -> 1 Qtd: 1
+    │   │   │   └── Embarked == S -> 0 Qtd: 1
+    │   │   └── Age == Jovens Adultos -> Testar: Pclass Qtd: 3
+    │   │       ├── Pclass == 1 -> 1 Qtd: 1
+    │   │       └── Pclass == 2 -> 0 Qtd: 2
+    │   ├── SibSp == 2 -> Testar: Pclass Qtd: 4
+    │   │   ├── Pclass == 1 -> Testar: Embarked Qtd: 2
+    │   │   │   ├── Embarked == Q -> 0 Qtd: 1
+    │   │   │   └── Embarked == S -> 1 Qtd: 1
+    │   │   └── Pclass == 2 -> 0 Qtd: 2
+    │   ├── SibSp == 4 -> Testar: Parch Qtd: 5
+    │   │   ├── Parch == 1 -> 0 Qtd: 3
+    │   │   └── Parch == 2 -> Testar: Pclass Qtd: 2
+    │   │       └── Pclass == 3 -> Testar: Age Qtd: 2
+    │   │           └── Age == Crianças -> Testar: Embarked Qtd: 2
+    │   │               └── Embarked == S -> 0 Qtd: 2
+    │   ├── SibSp == 5 -> 0 Qtd: 1
+    │   └── SibSp == 8 -> 0 Qtd: 1
+    ├── Fare == Baixo -> Testar: Age Qtd: 111
+    │   ├── Age == Adolescentes -> 0 Qtd: 5
+    │   ├── Age == Adultos -> Testar: Embarked Qtd: 67
+    │   │   ├── Embarked == C -> 0 Qtd: 12
+    │   │   ├── Embarked == Q -> Testar: Pclass Qtd: 15
+    │   │   │   └── Pclass == 3 -> Testar: SibSp Qtd: 15
+    │   │   │       └── SibSp == 0 -> Testar: Parch Qtd: 15
+    │   │   │           └── Parch == 0 -> 0 Qtd: 15
+    │   │   └── Embarked == S -> Testar: Pclass Qtd: 40
+    │   │       ├── Pclass == 1 -> 0 Qtd: 3
+    │   │       ├── Pclass == 2 -> 0 Qtd: 2
+    │   │       └── Pclass == 3 -> Testar: SibSp Qtd: 35
+    │   │           ├── SibSp == 0 -> Testar: Parch Qtd: 33
+    │   │           │   └── Parch == 0 -> 0 Qtd: 33
+    │   │           └── SibSp == 1 -> 0 Qtd: 2
+    │   ├── Age == Idosos -> 0 Qtd: 4
+    │   └── Age == Jovens Adultos -> Testar: Embarked Qtd: 35
+    │       ├── Embarked == C -> Testar: Pclass Qtd: 4
+    │       │   └── Pclass == 3 -> Testar: SibSp Qtd: 4
+    │       │       └── SibSp == 0 -> Testar: Parch Qtd: 4
+    │       │           └── Parch == 0 -> 0 Qtd: 4
+    │       ├── Embarked == Q -> 0 Qtd: 1
+    │       └── Embarked == S -> Testar: SibSp Qtd: 30
+    │           ├── SibSp == 0 -> Testar: Pclass Qtd: 26
+    │           │   └── Pclass == 3 -> Testar: Parch Qtd: 26
+    │           │       └── Parch == 0 -> 0 Qtd: 26
+    │           └── SibSp == 1 -> 0 Qtd: 4
+    ├── Fare == Média-Alta -> Testar: Pclass Qtd: 80
+    │   ├── Pclass == 1 -> Testar: Age Qtd: 26
+    │   │   ├── Age == Adultos -> Testar: SibSp Qtd: 20
+    │   │   │   └── SibSp == 0 -> Testar: Parch Qtd: 20
+    │   │   │       └── Parch == 0 -> Testar: Embarked Qtd: 20
+    │   │   │           ├── Embarked == C -> 1 Qtd: 5
+    │   │   │           └── Embarked == S -> 1 Qtd: 15
+    │   │   └── Age == Idosos -> 0 Qtd: 6
+    │   ├── Pclass == 2 -> Testar: Age Qtd: 19
+    │   │   ├── Age == Adolescentes -> 0 Qtd: 1
+    │   │   ├── Age == Adultos -> Testar: SibSp Qtd: 13
+    │   │   │   ├── SibSp == 0 -> 0 Qtd: 4
+    │   │   │   └── SibSp == 1 -> Testar: Parch Qtd: 9
+    │   │   │       ├── Parch == 0 -> Testar: Embarked Qtd: 7
+    │   │   │       │   ├── Embarked == C -> 0 Qtd: 1
+    │   │   │       │   └── Embarked == S -> 0 Qtd: 6
+    │   │   │       ├── Parch == 1 -> 0 Qtd: 1
+    │   │   │       └── Parch == 2 -> 0 Qtd: 1
+    │   │   ├── Age == Crianças -> 1 Qtd: 4
+    │   │   └── Age == Jovens Adultos -> 0 Qtd: 1
+    │   └── Pclass == 3 -> Testar: Embarked Qtd: 35
+    │       ├── Embarked == C -> Testar: SibSp Qtd: 5
+    │       │   ├── SibSp == 0 -> 0 Qtd: 2
+    │       │   └── SibSp == 1 -> 1 Qtd: 3
+    │       ├── Embarked == Q -> 0 Qtd: 6
+    │       └── Embarked == S -> Testar: Age Qtd: 24
+    │           ├── Age == Adolescentes -> 0 Qtd: 2
+    │           ├── Age == Adultos -> 0 Qtd: 14
+    │           ├── Age == Crianças -> Testar: SibSp Qtd: 4
+    │           │   ├── SibSp == 0 -> 1 Qtd: 1
+    │           │   └── SibSp == 3 -> 0 Qtd: 3
+    │           └── Age == Jovens Adultos -> 0 Qtd: 4
+    └── Fare == Média-Baixa -> Testar: Age Qtd: 86
+        ├── Age == Adolescentes -> Testar: SibSp Qtd: 5
+        │   ├── SibSp == 0 -> Testar: Pclass Qtd: 4
+        │   │   ├── Pclass == 2 -> 0 Qtd: 1
+        │   │   └── Pclass == 3 -> Testar: Parch Qtd: 3
+        │   │       └── Parch == 0 -> Testar: Embarked Qtd: 3
+        │   │           └── Embarked == S -> 0 Qtd: 3
+        │   └── SibSp == 1 -> 1 Qtd: 1
+        ├── Age == Adultos -> Testar: SibSp Qtd: 50
+        │   ├── SibSp == 0 -> Testar: Pclass Qtd: 46
+        │   │   ├── Pclass == 2 -> Testar: Embarked Qtd: 19
+        │   │   │   ├── Embarked == C -> Testar: Parch Qtd: 2
+        │   │   │   │   └── Parch == 0 -> 0 Qtd: 2
+        │   │   │   └── Embarked == S -> Testar: Parch Qtd: 17
+        │   │   │       └── Parch == 0 -> 0 Qtd: 17
+        │   │   └── Pclass == 3 -> Testar: Embarked Qtd: 27
+        │   │       ├── Embarked == C -> 0 Qtd: 2
+        │   │       ├── Embarked == Q -> 0 Qtd: 1
+        │   │       └── Embarked == S -> Testar: Parch Qtd: 24
+        │   │           └── Parch == 0 -> 0 Qtd: 24
+        │   ├── SibSp == 1 -> 0 Qtd: 2
+        │   └── SibSp == 2 -> 0 Qtd: 2
+        ├── Age == Crianças -> 1 Qtd: 1
+        ├── Age == Idosos -> Testar: Embarked Qtd: 3
+        │   ├── Embarked == Q -> 0 Qtd: 1
+        │   └── Embarked == S -> Testar: Pclass Qtd: 2
+        │       └── Pclass == 2 -> Testar: SibSp Qtd: 2
+        │           └── SibSp == 0 -> Testar: Parch Qtd: 2
+        │               └── Parch == 0 -> 0 Qtd: 2
+        └── Age == Jovens Adultos -> Testar: SibSp Qtd: 27
+            ├── SibSp == 0 -> Testar: Pclass Qtd: 25
+            │   ├── Pclass == 2 -> 0 Qtd: 11
+            │   └── Pclass == 3 -> Testar: Parch Qtd: 14
+            │       └── Parch == 0 -> Testar: Embarked Qtd: 14
+            │           └── Embarked == S -> 0 Qtd: 14
+            ├── SibSp == 1 -> 1 Qtd: 1
+            └── SibSp == 2 -> 0 Qtd: 1
+
+Sex == female && Pclass == 2 && Age == Crianças => Classe: 1
+Sex == female && Pclass == 2 && Age == Adolescentes => Classe: 1
+Sex == female && Pclass == 2 && Age == Idosos => Classe: 0
+Sex == female && Pclass == 2 && Age == Jovens Adultos && Parch == 1 => Classe: 1
+Sex == female && Pclass == 2 && Age == Jovens Adultos && Parch == 2 => Classe: 1
+Sex == female && Pclass == 2 && Age == Jovens Adultos && Parch == 0 && SibSp == 1 => Classe: 1
+Sex == female && Pclass == 2 && Age == Jovens Adultos && Parch == 0 && SibSp == 0 && Embarked == C => Classe: 1
+Sex == female && Pclass == 2 && Age == Jovens Adultos && Parch == 0 && SibSp == 0 && Embarked == S && Fare == Média-Baixa => Classe: 0
+Sex == female && Pclass == 2 && Age == Adultos && SibSp == 1 && Fare == Alta => Classe: 1
+Sex == female && Pclass == 2 && Age == Adultos && SibSp == 1 && Fare == Média-Baixa => Classe: 1
+Sex == female && Pclass == 2 && Age == Adultos && SibSp == 1 && Fare == Média-Alta && Embarked == C => Classe: 1
+Sex == female && Pclass == 2 && Age == Adultos && SibSp == 1 && Fare == Média-Alta && Embarked == S && Parch == 0 => Classe: 1
+Sex == female && Pclass == 2 && Age == Adultos && SibSp == 1 && Fare == Média-Alta && Embarked == S && Parch == 1 => Classe: 1
+Sex == female && Pclass == 2 && Age == Adultos && SibSp == 0 && Fare == Média-Alta => Classe: 1
+Sex == female && Pclass == 2 && Age == Adultos && SibSp == 0 && Fare == Média-Baixa && Parch == 0 && Embarked == S => Classe: 1
+Sex == female && Pclass == 1 && Fare == Alta => Classe: 1
+Sex == female && Pclass == 1 && Fare == Média-Alta && Embarked == S => Classe: 1
+Sex == female && Pclass == 1 && Fare == Média-Alta && Embarked == C && Age == Adultos && SibSp == 0 && Parch == 0 => Classe: 1
+Sex == female && Pclass == 3 && Fare == Alta && Parch == 2 => Classe: 0
+Sex == female && Pclass == 3 && Fare == Alta && Parch == 3 => Classe: 0
+Sex == female && Pclass == 3 && Fare == Alta && Parch == 5 => Classe: 1
+Sex == female && Pclass == 3 && Fare == Alta && Parch == 6 => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Baixa && Age == Adolescentes => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Baixa && Age == Crianças => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Baixa && Age == Idosos => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Baixa && Age == Jovens Adultos && SibSp == 1 => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Baixa && Age == Jovens Adultos && SibSp == 0 && Parch == 0 && Embarked == S => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Baixa && Age == Adultos && SibSp == 1 => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Baixa && Age == Adultos && SibSp == 0 && Embarked == C => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Baixa && Age == Adultos && SibSp == 0 && Embarked == S && Parch == 0 => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Baixa && Age == Adultos && SibSp == 0 && Embarked == S && Parch == 1 => Classe: 1
+Sex == female && Pclass == 3 && Fare == Baixo && Embarked == C => Classe: 1
+Sex == female && Pclass == 3 && Fare == Baixo && Embarked == S && Age == Adultos => Classe: 0
+Sex == female && Pclass == 3 && Fare == Baixo && Embarked == S && Age == Jovens Adultos => Classe: 1
+Sex == female && Pclass == 3 && Fare == Baixo && Embarked == Q && Parch == 2 => Classe: 0
+Sex == female && Pclass == 3 && Fare == Baixo && Embarked == Q && Parch == 0 && Age == Adolescentes => Classe: 1
+Sex == female && Pclass == 3 && Fare == Baixo && Embarked == Q && Parch == 0 && Age == Jovens Adultos && SibSp == 0 => Classe: 1
+Sex == female && Pclass == 3 && Fare == Baixo && Embarked == Q && Parch == 0 && Age == Adultos && SibSp == 0 => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 4 => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 3 => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 5 => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 2 && Age == Jovens Adultos => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 2 && Age == Crianças && SibSp == 0 => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 2 && Age == Crianças && SibSp == 3 => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 2 && Age == Adultos && Embarked == S => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 2 && Age == Adultos && Embarked == C && SibSp == 0 => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 1 && SibSp == 3 => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 1 && SibSp == 2 => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 1 && SibSp == 1 && Embarked == C => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 1 && SibSp == 1 && Embarked == Q => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 1 && SibSp == 1 && Embarked == S && Age == Adultos => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 1 && SibSp == 1 && Embarked == S && Age == Crianças => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 0 && Embarked == C => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 0 && Embarked == Q => Classe: 1
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 0 && Embarked == S && SibSp == 2 => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 0 && Embarked == S && SibSp == 1 && Age == Adultos => Classe: 0
+Sex == female && Pclass == 3 && Fare == Média-Alta && Parch == 0 && Embarked == S && SibSp == 1 && Age == Jovens Adultos => Classe: 0
+Sex == male && Fare == Alta && SibSp == 5 => Classe: 0
+Sex == male && Fare == Alta && SibSp == 8 => Classe: 0
+Sex == male && Fare == Alta && SibSp == 2 && Pclass == 2 => Classe: 0
+Sex == male && Fare == Alta && SibSp == 2 && Pclass == 1 && Embarked == Q => Classe: 0
+Sex == male && Fare == Alta && SibSp == 2 && Pclass == 1 && Embarked == S => Classe: 1
+Sex == male && Fare == Alta && SibSp == 4 && Parch == 1 => Classe: 0
+Sex == male && Fare == Alta && SibSp == 4 && Parch == 2 && Pclass == 3 && Age == Crianças && Embarked == S => Classe: 0
+Sex == male && Fare == Alta && SibSp == 1 && Age == Crianças => Classe: 1
+Sex == male && Fare == Alta && SibSp == 1 && Age == Adolescentes => Classe: 0
+Sex == male && Fare == Alta && SibSp == 1 && Age == Idosos && Embarked == C => Classe: 1
+Sex == male && Fare == Alta && SibSp == 1 && Age == Idosos && Embarked == S => Classe: 0
+Sex == male && Fare == Alta && SibSp == 1 && Age == Jovens Adultos && Pclass == 2 => Classe: 0
+Sex == male && Fare == Alta && SibSp == 1 && Age == Jovens Adultos && Pclass == 1 => Classe: 1
+Sex == male && Fare == Alta && SibSp == 1 && Age == Adultos && Parch == 2 => Classe: 1
+Sex == male && Fare == Alta && SibSp == 1 && Age == Adultos && Parch == 1 && Pclass == 1 => Classe: 1
+Sex == male && Fare == Alta && SibSp == 1 && Age == Adultos && Parch == 1 && Pclass == 2 => Classe: 0
+Sex == male && Fare == Alta && SibSp == 1 && Age == Adultos && Parch == 0 && Embarked == C && Pclass == 1 => Classe: 1
+Sex == male && Fare == Alta && SibSp == 1 && Age == Adultos && Parch == 0 && Embarked == S && Pclass == 1 => Classe: 0
+Sex == male && Fare == Alta && SibSp == 0 && Age == Idosos => Classe: 0
+Sex == male && Fare == Alta && SibSp == 0 && Age == Crianças => Classe: 1
+Sex == male && Fare == Alta && SibSp == 0 && Age == Jovens Adultos && Parch == 0 => Classe: 0
+Sex == male && Fare == Alta && SibSp == 0 && Age == Jovens Adultos && Parch == 1 && Pclass == 1 && Embarked == C => Classe: 1
+Sex == male && Fare == Alta && SibSp == 0 && Age == Adultos && Pclass == 3 && Parch == 0 && Embarked == S => Classe: 1
+Sex == male && Fare == Alta && SibSp == 0 && Age == Adultos && Pclass == 1 && Embarked == C => Classe: 0
+Sex == male && Fare == Alta && SibSp == 0 && Age == Adultos && Pclass == 1 && Embarked == S && Parch == 0 => Classe: 0
+Sex == male && Fare == Alta && SibSp == 0 && Age == Adultos && Pclass == 1 && Embarked == S && Parch == 1 => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 2 && Age == Crianças => Classe: 1
+Sex == male && Fare == Média-Alta && Pclass == 2 && Age == Adolescentes => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 2 && Age == Jovens Adultos => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 2 && Age == Adultos && SibSp == 0 => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 2 && Age == Adultos && SibSp == 1 && Parch == 1 => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 2 && Age == Adultos && SibSp == 1 && Parch == 2 => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 2 && Age == Adultos && SibSp == 1 && Parch == 0 && Embarked == S => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 2 && Age == Adultos && SibSp == 1 && Parch == 0 && Embarked == C => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 1 && Age == Idosos => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 1 && Age == Adultos && SibSp == 0 && Parch == 0 && Embarked == S => Classe: 1
+Sex == male && Fare == Média-Alta && Pclass == 1 && Age == Adultos && SibSp == 0 && Parch == 0 && Embarked == C => Classe: 1
+Sex == male && Fare == Média-Alta && Pclass == 3 && Embarked == Q => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 3 && Embarked == C && SibSp == 1 => Classe: 1
+Sex == male && Fare == Média-Alta && Pclass == 3 && Embarked == C && SibSp == 0 => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 3 && Embarked == S && Age == Adultos => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 3 && Embarked == S && Age == Jovens Adultos => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 3 && Embarked == S && Age == Adolescentes => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 3 && Embarked == S && Age == Crianças && SibSp == 3 => Classe: 0
+Sex == male && Fare == Média-Alta && Pclass == 3 && Embarked == S && Age == Crianças && SibSp == 0 => Classe: 1
+Sex == male && Fare == Média-Baixa && Age == Crianças => Classe: 1
+Sex == male && Fare == Média-Baixa && Age == Idosos && Embarked == Q => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Idosos && Embarked == S && Pclass == 2 && SibSp == 0 && Parch == 0 => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Adolescentes && SibSp == 1 => Classe: 1
+Sex == male && Fare == Média-Baixa && Age == Adolescentes && SibSp == 0 && Pclass == 2 => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Adolescentes && SibSp == 0 && Pclass == 3 && Parch == 0 && Embarked == S => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Jovens Adultos && SibSp == 1 => Classe: 1
+Sex == male && Fare == Média-Baixa && Age == Jovens Adultos && SibSp == 2 => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Jovens Adultos && SibSp == 0 && Pclass == 2 => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Jovens Adultos && SibSp == 0 && Pclass == 3 && Parch == 0 && Embarked == S => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Adultos && SibSp == 1 => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Adultos && SibSp == 2 => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Adultos && SibSp == 0 && Pclass == 2 && Embarked == C && Parch == 0 => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Adultos && SibSp == 0 && Pclass == 2 && Embarked == S && Parch == 0 => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Adultos && SibSp == 0 && Pclass == 3 && Embarked == C => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Adultos && SibSp == 0 && Pclass == 3 && Embarked == Q => Classe: 0
+Sex == male && Fare == Média-Baixa && Age == Adultos && SibSp == 0 && Pclass == 3 && Embarked == S && Parch == 0 => Classe: 0
+Sex == male && Fare == Baixo && Age == Adolescentes => Classe: 0
+Sex == male && Fare == Baixo && Age == Idosos => Classe: 0
+Sex == male && Fare == Baixo && Age == Jovens Adultos && Embarked == Q => Classe: 0
+Sex == male && Fare == Baixo && Age == Jovens Adultos && Embarked == C && Pclass == 3 && SibSp == 0 && Parch == 0 => Classe: 0
+Sex == male && Fare == Baixo && Age == Jovens Adultos && Embarked == S && SibSp == 1 => Classe: 0
+Sex == male && Fare == Baixo && Age == Jovens Adultos && Embarked == S && SibSp == 0 && Pclass == 3 && Parch == 0 => Classe: 0
+Sex == male && Fare == Baixo && Age == Adultos && Embarked == C => Classe: 0
+Sex == male && Fare == Baixo && Age == Adultos && Embarked == Q && Pclass == 3 && SibSp == 0 && Parch == 0 => Classe: 0
+Sex == male && Fare == Baixo && Age == Adultos && Embarked == S && Pclass == 1 => Classe: 0
+Sex == male && Fare == Baixo && Age == Adultos && Embarked == S && Pclass == 2 => Classe: 0
+Sex == male && Fare == Baixo && Age == Adultos && Embarked == S && Pclass == 3 && SibSp == 1 => Classe: 0
+Sex == male && Fare == Baixo && Age == Adultos && Embarked == S && Pclass == 3 && SibSp == 0 && Parch == 0 => Classe: 0
+Classe: 0
+  Precisão: 0.8291
+  Recall: 0.8622
+  F1-Score: 0.8453
+  Acurácia: 0.8006
+
+Classe: 1
+  Precisão: 0.7459
+  Recall: 0.6947
+  F1-Score: 0.7194
+  Acurácia: 0.8006
+
+     0   1
+0  194  31
+1   40  91
