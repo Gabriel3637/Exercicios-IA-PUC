@@ -111,20 +111,29 @@ class RedeNeural:
                 self.erroPorCamada(saida_esperada[i])
                 self.ajustarPesos()
 
-    def prever(self, entradas: list):
+    def calcularSE(self, saida_obtida: np.ndarray, saida_esperada: np.ndarray):
+        se = np.sum((saida_esperada - saida_obtida) ** 2)
+        return se
+
+    def prever(self, entradas: list, saida_esperada: list):
         resp = []
-        for entrada in entradas:
+        se = 0
+        for indice, entrada in enumerate(entradas):
             if entrada.shape[1] != self.num_entradas:
                 raise ValueError("Número de entradas deve ser igual ao número de neurônios na camada de entrada.")
             self.atribuirEntradas(entrada)
             resultado = self.resultado()
-            print(resultado)
+            
+            se += self.calcularSE(resultado, saida_esperada[indice])
             for i in range(resultado.shape[0]):
                 for j in range(resultado.shape[1]):
                     if resultado[i][j] >= 0.5:
                         resultado[i][j] = 1
                     else:
                         resultado[i][j] = 0
+            print(f'Entrada: {entrada} Resultado real: {self.resultado()} Saida esperada: {saida_esperada[indice]} Resultado arredondado: {resultado}')
             resp.append(resultado)
+        se /= len(entradas)
+        print(f"Erro quadrático médio: {se}")
 
         return resp
